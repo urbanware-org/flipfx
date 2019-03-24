@@ -10,16 +10,16 @@
 # GitLab: https://gitlab.com/urbanware-org/flipfx
 # ============================================================================
 
-__version__ = "1.0.0"
+__version__ = "1.0.1"
 
 import random
 import sys
 import time
 
 
-def charflip(string, delay=0.08):
+def charflip(string, delay=80):
     """
-        {key: value for key, value in variable}
+        Print the input text using a character flipping effect.
     """
     chars = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789"
     string_output = ""
@@ -30,6 +30,9 @@ def charflip(string, delay=0.08):
     string_range = len(string_output)
     sys.stdout.write("\r" + string_output)
     sys.stdout.flush()
+
+    delay = int(delay)
+    wait = float(delay) / 1000
 
     char_list = []
     for i in string_output:
@@ -50,7 +53,7 @@ def charflip(string, delay=0.08):
             string_temp += char
         string_output = string_temp
         string_temp = ""
-        time.sleep(delay)
+        time.sleep(wait)
         sys.stdout.write("\r" + string_output)
         sys.stdout.flush()
 
