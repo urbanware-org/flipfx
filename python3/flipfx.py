@@ -20,6 +20,16 @@ def charflip(string, delay=80):
     """
         Print the input text using a character flipping effect.
     """
+
+    if string == "":
+        return
+
+    try:
+        delay = int(delay)
+        wait = float(delay) / 1000
+    except:
+        raise Exception("Delay must be an integer")
+
     chars = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789"
     string_output = ""
     string_temp = ""
@@ -28,9 +38,6 @@ def charflip(string, delay=80):
         string_output += random.choice(chars)
     string_range = len(string_output)
     print("\r" + string_output, end='')
-
-    delay = int(delay)
-    wait = float(delay) / 1000
 
     char_list = []
     for i in string_output:
