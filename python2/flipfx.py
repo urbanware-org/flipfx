@@ -28,7 +28,10 @@ def charflip(string, delay=80):
         delay = int(delay)
         wait = float(delay) / 1000
     except:
-        raise Exception("Delay must be an integer.")
+        raise Exception("The delay must be an integer.")
+
+    if delay <= 0:
+        raise Exception("The delay must be greater than zero.")
 
     chars = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789"
     string_output = ""
