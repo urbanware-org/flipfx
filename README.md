@@ -23,10 +23,16 @@ Before the given string is printed, a random one with the same length will be cr
 
 **Usage example:**
 
+Code:
+
 ```python
 import flipfx
-flipfx.charflip("This is a simple text printed on the shell.", 80)
+flipfx.charflip("This is an example how the module works.", 80)
 ```
+
+Output:
+
+<img src="https://raw.githubusercontent.com/urbanware-org/flipfx/master/gif/flipfx.gif" alt="FlipFX sample output" width="48%">
 
 [Top](#flipfx)
 
