@@ -23,7 +23,7 @@ Before the given string is printed, a random one with the same length will be cr
 
 ```python
 import flipfx
-flipfx.charflip("This is a simple text printed on the shell.", 0.08)
+flipfx.charflip("This is a simple text printed on the shell.", 80)
 ```
 
 [Top](#flipfx)
