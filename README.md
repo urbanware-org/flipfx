@@ -21,16 +21,18 @@ The *FlipFX* module allows printing a string with a flipping character effect.
 
 Before the given string is printed, a random one with the same length will be created and printed. With a user-defined delay the characters will flip randomly until all of them are identical with the given one.
 
-**Usage example:**
+### Usage example
 
-Code:
+#### Code
+
+Notice that the delay must be given in milliseconds.
 
 ```python
 import flipfx
 flipfx.charflip("This is an example how the module works.", 80)
 ```
 
-Output:
+#### Output
 
 <img src="https://raw.githubusercontent.com/urbanware-org/flipfx/master/gif/flipfx.gif" alt="FlipFX sample output" width="48%">
 
