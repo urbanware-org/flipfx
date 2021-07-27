@@ -52,7 +52,7 @@ flipfx.charflip("This is an example how the module works.", 80)
 
 produces this output:
 
-<img src="https://raw.githubusercontent.com/urbanware-org/flipfx/master/gif/flipfx.gif" alt="FlipFX sample output" width="48%">
+<img src="https://raw.githubusercontent.com/urbanware-org/flipfx/master/gif/flipfx.gif" alt="FlipFX sample output">
 
 [Top](#flipfx)
 
