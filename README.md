@@ -13,7 +13,9 @@
 
 The *FlipFX* module allows printing a string with a flipping character effect.
 
-:keyboard: If you are also interested in a typewriter effect text printer module, you can find it [here](https://github.com/urbanware-org/typefx).
+:keyboard: If you are interested in a typewriter effect text printer module, you can find it [here](https://github.com/urbanware-org/typefx).
+
+:left_right_arrow: There also is a left-to-right line bouncing effect module [here](https://github.com/urbanware-org/bouncefx).
 
 [Top](#flipfx)
 
@@ -21,18 +23,34 @@ The *FlipFX* module allows printing a string with a flipping character effect.
 
 Before the given string is printed, a random one with the same length will be created and printed. With a user-defined delay the characters will flip randomly until all of them are identical with the given one.
 
-### Usage example
+### Usage
 
-#### Code
+First of all, the module must be imported.
+
+```python
+import flipfx
+```
+
+#### Method
 
 Notice that the delay must be given in milliseconds.
+
+The method requires only two arguments, the string that should be printed and the delay between flipping the characters:
+
+```python
+flipfx.charflip(string, delay=80)
+```
+
+#### Example
+
+The following code
 
 ```python
 import flipfx
 flipfx.charflip("This is an example how the module works.", 80)
 ```
 
-#### Output
+produces this output:
 
 <img src="https://raw.githubusercontent.com/urbanware-org/flipfx/master/gif/flipfx.gif" alt="FlipFX sample output" width="48%">
 
