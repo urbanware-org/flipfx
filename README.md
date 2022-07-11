@@ -13,9 +13,7 @@
 
 The *FlipFX* module allows printing a string with a flipping character effect.
 
-:keyboard: If you are interested in a typewriter effect text printer module, you can find it [here](https://github.com/urbanware-org/typefx).
-
-:left_right_arrow: There also is a left-to-right line bouncing effect module [here](https://github.com/urbanware-org/bouncefx).
+You can find more text printing effects [here](https://github.com/urbanware-org/textfx).
 
 [Top](#flipfx)
 
